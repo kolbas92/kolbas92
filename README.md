@@ -4,7 +4,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2800&pause=900&color=22C55E&center=true&vCenter=true&width=900&lines=Backend+Developer;Fullstack+Developer;Game+Developer"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2200&pause=300&color=8B5CF6&center=true&vCenter=true&width=900&lines=Python;React;Vue;Docker;Git;Phaser;Unreal+Engine;Claude+Code;C%2B%2B;Lua"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2200&pause=300&color=8338EC&center=true&vCenter=true&width=900&lines=Python;React;Vue;Docker;Git;Phaser;Unreal+Engine;Claude+Code;C%2B%2B;Lua"/>
 
 <br>
 
