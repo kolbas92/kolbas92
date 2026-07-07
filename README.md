@@ -64,15 +64,15 @@ Status:        ☕ Coding...
 
 <div align="center">
 
-<img width="95%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kolbas92&theme=github_dark"/>
+<img width="95%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kolbas92&theme=github"/>
 
 <br>
 
-<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kolbas92&theme=github_dark"/>
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kolbas92&theme=github"/>
 
-<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kolbas92&theme=github_dark"/>
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kolbas92&theme=github"/>
 
-<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kolbas92&theme=github_dark"/>
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kolbas92&theme=github"/>
 
 </div>
 
