@@ -2,7 +2,9 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Artem%20Nizgirev&fontAlign=50&fontAlignY=38&fontSize=46&fontColor=ffffff&animation=fadeIn&color=0:14532d,50:15803d,100:8b5cf6"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&duration=3500&pause=900&color=22C55E&center=true&vCenter=true&width=850&lines=Backend+Developer;Fullstack+Developer;Game+Developer;Python+•+React+•+Vue;Phaser+•+Docker+•+C%2B%2B;Always+building+something+cool"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2800&pause=900&color=22C55E&center=true&vCenter=true&width=900&lines=Backend+Developer;Fullstack+Developer;Game+Developer"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2200&pause=300&color=8B5CF6&center=true&vCenter=true&width=900&lines=Python;React;Vue;Docker;Git;Phaser;Unreal+Engine;Claude+Code;C%2B%2B;Lua"/>
 
 <br>
 
@@ -12,29 +14,30 @@
 
 ---
 
-# 🖥 whoami
+# 🖥 neofetch
 
-```bash
-$ whoami
+```text
+                   Artem Nizgirev@kolbas92
+────────────────────────────────────────────────────
 
-Name........ Artem Nizgirev
-Nickname.... kolbas92
+OS:            Backend Developer
 
-Role........ Backend Developer
-............. Fullstack Developer
-............. Game Developer
+Languages:     Python • C++ • Lua
 
-Stack....... Python • React • Vue
-............. Docker • Git
-............. Phaser • Unreal Engine
-............. C++ • Lua
+Frontend:      React • Vue
 
-Current.....
-✔ Building Web Applications
-✔ Developing a Phaser Game
-✔ Learning Unreal Engine
+Game Dev:      Phaser • Unreal Engine
 
-Status...... Coding...
+Tools:         Docker • Git • Linux
+               VS Code • Claude Code
+
+Currently:     Building GiG36 Website
+               Developing Crypt
+               Exploring Unreal Engine
+
+Status:        ☕ Coding...
+
+────────────────────────────────────────────────────
 ```
 
 ---
@@ -47,6 +50,8 @@ Status...... Coding...
 
 <br><br>
 
+<img src="https://img.shields.io/badge/Claude_Code-8b5cf6?style=for-the-badge&logo=claude&logoColor=white"/>
+
 <img src="https://img.shields.io/badge/Phaser-14532d?style=for-the-badge&logo=phaser&logoColor=22c55e"/>
 
 <img src="https://img.shields.io/badge/Unreal_Engine-8b5cf6?style=for-the-badge&logo=unrealengine&logoColor=white"/>
@@ -55,7 +60,7 @@ Status...... Coding...
 
 ---
 
-# 📈 GitHub Analytics
+# 📊 GitHub Analytics
 
 <div align="center">
 
@@ -73,7 +78,7 @@ Status...... Coding...
 
 ---
 
-# 📈 Activity
+# 📈 Activity Graph
 
 <div align="center">
 
@@ -83,42 +88,31 @@ Status...... Coding...
 
 ---
 
-# 🏆 Achievements
+# 🚀 Building Now
 
-<div align="center">
+### 🌐 GiG36 Website
 
-<img src="https://github-profile-trophy.vercel.app/?username=kolbas92&theme=matrix&column=4&margin-w=15&margin-h=15&no-frame=true"/>
+> Modern web platform focused on clean architecture, performance and user experience.
 
-</div>
+<br>
 
----
+### 🎮 Crypt
 
-# 🚀 Current Focus
-
-```text
-🌍 Backend Development      ████████████████████
-
-⚛ React & Vue              █████████████████░░
-
-🎮 Phaser                  ███████████████░░░░
-
-🎮 Unreal Engine           ██████████░░░░░░░░░
-
-🐳 Docker                  █████████████████░░
-
-📚 Learning                ███████████████████
-```
+> A 2D game built with **Phaser**, featuring custom gameplay mechanics and continuous development.
 
 ---
 
-# 📂 Featured Projects
+# 🎯 Current Focus
 
-🚀 Coming soon...
+- 🌐 Building modern web applications
 
-- Python APIs
-- Fullstack Applications
-- Phaser Game
-- Unreal Engine Experiments
+- 🎮 Developing games with Phaser
+
+- ⚙️ Backend APIs & scalable architecture
+
+- 🤖 Integrating AI into the development workflow with Claude Code
+
+- 📚 Exploring Unreal Engine
 
 ---
 
@@ -149,6 +143,12 @@ Status...... Coding...
 ---
 
 <div align="center">
+
+```bash
+$ echo "Happy Coding!"
+
+Happy Coding! 🚀
+```
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=140&color=0:14532d,50:15803d,100:8b5cf6"/>
 
