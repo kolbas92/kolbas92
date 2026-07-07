@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&text=Artem%20Nizgirev&fontAlign=50&fontAlignY=38&fontSize=48&fontColor=ffffff&animation=fadeIn&color=0:14532d,40:16a34a,100:8b5cf6"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Artem%20Nizgirev&fontAlign=50&fontAlignY=38&fontSize=46&fontColor=ffffff&animation=fadeIn&color=0:14532d,50:15803d,100:8b5cf6"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=27&duration=3500&pause=800&color=22C55E&center=true&vCenter=true&width=850&lines=Backend+Developer;Fullstack+Developer;Game+Developer;Python+%7C+React+%7C+Vue;Docker+%7C+C%2B%2B+%7C+Lua;Always+building+something+cool"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&duration=3500&pause=900&color=22C55E&center=true&vCenter=true&width=850&lines=Backend+Developer;Fullstack+Developer;Game+Developer;Python+•+React+•+Vue;Phaser+•+Docker+•+C%2B%2B;Always+building+something+cool"/>
 
 <br>
 
@@ -14,26 +14,27 @@
 
 # 🖥 whoami
 
-```console
-PS C:\Users\Artem> whoami
+```bash
+$ whoami
 
-Artem Nizgirev
+Name........ Artem Nizgirev
+Nickname.... kolbas92
 
-Backend Developer
-Fullstack Developer
-Game Developer
+Role........ Backend Developer
+............. Fullstack Developer
+............. Game Developer
 
-Location:
-Russia
+Stack....... Python • React • Vue
+............. Docker • Git
+............. Phaser • Unreal Engine
+............. C++ • Lua
 
-Current Mission:
-✔ Building modern web applications
-✔ Developing a Phaser game
+Current.....
+✔ Building Web Applications
+✔ Developing a Phaser Game
 ✔ Learning Unreal Engine
-✔ Improving architecture skills
 
-Coffee Level:
-████████████░ 92%
+Status...... Coding...
 ```
 
 ---
@@ -42,63 +43,49 @@ Coffee Level:
 
 <div align="center">
 
-### Languages
+<img src="https://skillicons.dev/icons?i=python,react,vue,docker,git,github,linux,vscode,cpp,lua&theme=dark"/>
 
-<img src="https://skillicons.dev/icons?i=python,cpp,lua&theme=dark"/>
-
-### Frontend
-
-<img src="https://skillicons.dev/icons?i=react,vue,html,css,js&theme=dark"/>
-
-### Backend & DevOps
-
-<img src="https://skillicons.dev/icons?i=python,docker,git,github,linux,vscode&theme=dark"/>
-
-### Game Development
+<br><br>
 
 <img src="https://img.shields.io/badge/Phaser-14532d?style=for-the-badge&logo=phaser&logoColor=22c55e"/>
 
-<img src="https://img.shields.io/badge/Unreal%20Engine-8b5cf6?style=for-the-badge&logo=unrealengine&logoColor=white"/>
+<img src="https://img.shields.io/badge/Unreal_Engine-8b5cf6?style=for-the-badge&logo=unrealengine&logoColor=white"/>
 
 </div>
 
 ---
 
-# 📊 GitHub Stats
+# 📈 GitHub Analytics
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=kolbas92&show_icons=true&theme=merko&hide_border=true&include_all_commits=true&count_private=true"/>
+<img width="95%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kolbas92&theme=github_dark"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kolbas92&layout=compact&theme=merko&hide_border=true"/>
+<br>
+
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kolbas92&theme=github_dark"/>
+
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kolbas92&theme=github_dark"/>
+
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kolbas92&theme=github_dark"/>
 
 </div>
 
 ---
 
+# 📈 Activity
+
 <div align="center">
 
-## 🔥 GitHub Streak
-
-<img src="https://streak-stats.demolab.com?user=kolbas92&theme=merko&hide_border=true"/>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=kolbas92&theme=github-dark&bg_color=0d1117&color=22c55e&line=8b5cf6&point=22c55e&hide_border=true"/>
 
 </div>
 
 ---
 
-<div align="center">
-
-## 📈 Contribution Graph
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=kolbas92&theme=merko&hide_border=true&radius=16"/>
-
-</div>
-
----
+# 🏆 Achievements
 
 <div align="center">
-
-## 🏆 GitHub Trophies
 
 <img src="https://github-profile-trophy.vercel.app/?username=kolbas92&theme=matrix&column=4&margin-w=15&margin-h=15&no-frame=true"/>
 
@@ -109,35 +96,29 @@ Coffee Level:
 # 🚀 Current Focus
 
 ```text
-🌐 Fullstack Development
-█████████████████████ 100%
+🌍 Backend Development      ████████████████████
 
-🐍 Python Backend
-█████████████████████ 100%
+⚛ React & Vue              █████████████████░░
 
-🎮 Phaser Game
-████████████████░░░░░ 80%
+🎮 Phaser                  ███████████████░░░░
 
-🎮 Unreal Engine
-█████████░░░░░░░░░░░░ 45%
+🎮 Unreal Engine           ██████████░░░░░░░░░
 
-🐳 Docker
-███████████████░░░░░░ 75%
+🐳 Docker                  █████████████████░░
+
+📚 Learning                ███████████████████
 ```
 
 ---
 
 # 📂 Featured Projects
 
-Coming soon...
+🚀 Coming soon...
 
-⭐ Backend APIs
-
-⭐ Fullstack Applications
-
-⭐ Phaser Game
-
-⭐ Unreal Engine Experiments
+- Python APIs
+- Fullstack Applications
+- Phaser Game
+- Unreal Engine Experiments
 
 ---
 
@@ -145,17 +126,21 @@ Coming soon...
 
 <div align="center">
 
-[![Gmail](https://img.shields.io/badge/Gmail-14532d?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ruskolbaska11@gmail.com)
+<a href="mailto:ruskolbaska11@gmail.com">
+<img src="https://img.shields.io/badge/Email-14532d?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
 
-[![GitHub](https://img.shields.io/badge/GitHub-8b5cf6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kolbas92)
+<a href="https://github.com/kolbas92">
+<img src="https://img.shields.io/badge/GitHub-8b5cf6?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 
 </div>
 
 ---
 
-<div align="center">
+# 🐍 Contribution Snake
 
-## 🐍 Contribution Snake
+<div align="center">
 
 ![](https://raw.githubusercontent.com/kolbas92/kolbas92/output/github-contribution-grid-snake-dark.svg)
 
@@ -165,14 +150,6 @@ Coming soon...
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kolbas92&theme=github_dark"/>
-
-</div>
-
----
-
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=160&color=0:14532d,40:16a34a,100:8b5cf6"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=140&color=0:14532d,50:15803d,100:8b5cf6"/>
 
 </div>
