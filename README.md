@@ -1,42 +1,44 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=180&text=Artem%20Nizgirev&fontSize=42&fontColor=ffffff&color=0:00ff88,100:8b5cf6&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&text=Artem%20Nizgirev&fontAlign=50&fontAlignY=38&fontSize=48&fontColor=ffffff&animation=fadeIn&color=0:14532d,40:16a34a,100:8b5cf6"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&duration=3500&pause=800&color=00FF88&center=true&vCenter=true&width=750&lines=Backend+Developer;Fullstack+Developer;Game+Developer;Python+%7C+React+%7C+Vue;Always+learning+something+new"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=27&duration=3500&pause=800&color=22C55E&center=true&vCenter=true&width=850&lines=Backend+Developer;Fullstack+Developer;Game+Developer;Python+%7C+React+%7C+Vue;Docker+%7C+C%2B%2B+%7C+Lua;Always+building+something+cool"/>
 
-### 🟢 Backend • 🌐 Fullstack • 🎮 GameDev
+<br>
 
-<img src="https://komarev.com/ghpvc/?username=kolbas92&style=for-the-badge&color=brightgreen"/>
+<img src="https://komarev.com/ghpvc/?username=kolbas92&style=for-the-badge&color=22c55e"/>
 
 </div>
 
 ---
 
-# 👨‍💻 About Me
+# 🖥 whoami
 
-```bash
-$ whoami
+```console
+PS C:\Users\Artem> whoami
 
-Name: Artem Nizgirev
+Artem Nizgirev
 
-Role:
-├── Backend Developer
-├── Fullstack Developer
-└── Game Developer
+Backend Developer
+Fullstack Developer
+Game Developer
 
-Currently:
-├── 🌍 Building Web Applications
-├── 🎮 Developing a Phaser Game
-├── ⚡ Learning new technologies
-└── 🚀 Improving software architecture
+Location:
+Russia
 
-Favorite Stack:
-Python • React • Vue • Docker • Git
+Current Mission:
+✔ Building modern web applications
+✔ Developing a Phaser game
+✔ Learning Unreal Engine
+✔ Improving architecture skills
+
+Coffee Level:
+████████████░ 92%
 ```
 
 ---
 
-# ⚡ Tech Stack
+# ⚙ Tech Stack
 
 <div align="center">
 
@@ -50,11 +52,11 @@ Python • React • Vue • Docker • Git
 
 ### Backend & DevOps
 
-<img src="https://skillicons.dev/icons?i=python,docker,git,github,vscode&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=python,docker,git,github,linux,vscode&theme=dark"/>
 
 ### Game Development
 
-<img src="https://img.shields.io/badge/Phaser-00ff88?style=for-the-badge&logo=phaser&logoColor=black"/>
+<img src="https://img.shields.io/badge/Phaser-14532d?style=for-the-badge&logo=phaser&logoColor=22c55e"/>
 
 <img src="https://img.shields.io/badge/Unreal%20Engine-8b5cf6?style=for-the-badge&logo=unrealengine&logoColor=white"/>
 
@@ -62,13 +64,13 @@ Python • React • Vue • Docker • Git
 
 ---
 
-# 📊 GitHub Statistics
+# 📊 GitHub Stats
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=kolbas92&show_icons=true&theme=merko&hide_border=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=kolbas92&show_icons=true&theme=merko&hide_border=true&include_all_commits=true&count_private=true"/>
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kolbas92&layout=compact&theme=merko&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kolbas92&layout=compact&theme=merko&hide_border=true"/>
 
 </div>
 
@@ -86,57 +88,91 @@ Python • React • Vue • Docker • Git
 
 <div align="center">
 
-## 🏆 GitHub Trophies
+## 📈 Contribution Graph
 
-<img src="https://github-profile-trophy.vercel.app/?username=kolbas92&theme=matrix&no-frame=true&row=1&column=6"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=kolbas92&theme=merko&hide_border=true&radius=16"/>
 
 </div>
 
 ---
 
-## 🚀 Current Goals
+<div align="center">
 
-- 🌍 Fullstack Web Development
-- 🎮 Phaser Game Development
-- ⚙️ Backend APIs
-- 🐳 Docker & Deployment
-- 📚 Clean Architecture
-- 🎯 Better UI/UX
+## 🏆 GitHub Trophies
+
+<img src="https://github-profile-trophy.vercel.app/?username=kolbas92&theme=matrix&column=4&margin-w=15&margin-h=15&no-frame=true"/>
+
+</div>
 
 ---
 
-## 📌 Skills
+# 🚀 Current Focus
 
 ```text
-Backend        ████████████████████ 100%
+🌐 Fullstack Development
+█████████████████████ 100%
 
-Frontend       ████████████████░░░░ 80%
+🐍 Python Backend
+█████████████████████ 100%
 
-GameDev        ███████████████░░░░░ 70%
+🎮 Phaser Game
+████████████████░░░░░ 80%
 
-DevOps         ████████████░░░░░░░░ 60%
+🎮 Unreal Engine
+█████████░░░░░░░░░░░░ 45%
 
-UI/UX          █████████░░░░░░░░░░░ 45%
+🐳 Docker
+███████████████░░░░░░ 75%
 ```
+
+---
+
+# 📂 Featured Projects
+
+Coming soon...
+
+⭐ Backend APIs
+
+⭐ Fullstack Applications
+
+⭐ Phaser Game
+
+⭐ Unreal Engine Experiments
 
 ---
 
 # 📫 Contact
 
-📧 Email: **ruskolbaska11@gmail.com**
+<div align="center">
 
-GitHub:
+[![Gmail](https://img.shields.io/badge/Gmail-14532d?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ruskolbaska11@gmail.com)
 
-https://github.com/kolbas92
+[![GitHub](https://img.shields.io/badge/GitHub-8b5cf6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kolbas92)
+
+</div>
 
 ---
 
 <div align="center">
 
-### ⭐ Thanks for visiting!
+## 🐍 Contribution Snake
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&duration=3500&pause=1000&color=8B5CF6&center=true&width=500&lines=Happy+Coding!;See+you+again!"/>
+![](https://raw.githubusercontent.com/kolbas92/kolbas92/output/github-contribution-grid-snake-dark.svg)
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:00ff88,100:8b5cf6"/>
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kolbas92&theme=github_dark"/>
+
+</div>
+
+---
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=160&color=0:14532d,40:16a34a,100:8b5cf6"/>
 
 </div>
