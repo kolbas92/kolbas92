@@ -167,12 +167,9 @@ Where my free evenings go right now:
 
 <br>
 
-<img width="41%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kolbas92&theme=github_dark"/>
-<img width="41%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kolbas92&theme=github_dark"/>
-
-<br>
-
-<img width="60%" src="https://streak-stats.demolab.com?user=kolbas92&theme=github-dark-blue&hide_border=true&background=0D1117&ring=22C55E&fire=8B5CF6&currStreakLabel=22C55E&sideLabels=22C55E&dates=8B949E"/>
+<img width="31%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kolbas92&theme=github_dark"/>
+<img width="31%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kolbas92&theme=github_dark"/>
+<img width="31%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kolbas92&theme=github_dark"/>
 
 <br>
 
