@@ -1,8 +1,13 @@
+import io
+import os
+import tempfile
 import unittest
+import urllib.error
 from datetime import date, timedelta
+from unittest import mock
 from xml.dom import minidom
 
-from stats import Day, parse_calendar, render, summarize
+from stats import Day, main, parse_calendar, render, summarize
 from theme import DARK
 
 START = date(2026, 1, 4)  # a Sunday
@@ -59,6 +64,30 @@ class RenderTest(unittest.TestCase):
         doc = minidom.parseString(svg)
         cells = [r for r in doc.getElementsByTagName("rect") if r.getElementsByTagName("title")]
         self.assertEqual(len(cells), 371)
+
+
+class MainErrorsTest(unittest.TestCase):
+    def run_main(self, failure: Exception) -> tuple[int, str]:
+        stderr = io.StringIO()
+        with mock.patch.dict(os.environ, {"GITHUB_TOKEN": "t"}), \
+                mock.patch("stats.urllib.request.urlopen", side_effect=failure), \
+                mock.patch("sys.stderr", stderr), tempfile.TemporaryDirectory() as out:
+            code = main(["--out", out])
+        return code, stderr.getvalue()
+
+    def test_http_error_is_reported_without_a_traceback(self):
+        failure = urllib.error.HTTPError(
+            "https://api.github.com/graphql", 401, "Unauthorized", {},
+            io.BytesIO(b'{"message":"Bad credentials"}'))
+        code, err = self.run_main(failure)
+        self.assertEqual(code, 1)
+        self.assertIn("HTTP 401", err)
+        self.assertIn("Bad credentials", err)
+
+    def test_network_error_is_reported(self):
+        code, err = self.run_main(urllib.error.URLError("timed out"))
+        self.assertEqual(code, 1)
+        self.assertIn("unreachable", err)
 
 
 if __name__ == "__main__":

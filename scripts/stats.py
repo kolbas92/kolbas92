@@ -15,9 +15,10 @@ import argparse
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from dataclasses import dataclass
-from datetime import date, timedelta
+from datetime import date
 from html import escape
 from pathlib import Path
 
@@ -58,6 +59,10 @@ class Summary:
     busiest: Day | None
 
 
+class FetchError(RuntimeError):
+    """The GitHub API could not be reached or refused the request."""
+
+
 def parse_calendar(payload: dict) -> list[Day]:
     """Flatten the GraphQL calendar into days, oldest first."""
     try:
@@ -80,8 +85,15 @@ def fetch_calendar(login: str, token: str) -> list[Day]:
         headers={"Authorization": f"bearer {token}", "Content-Type": "application/json",
                  "User-Agent": f"{login}-profile-stats"},
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return parse_calendar(json.load(response))
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            payload = json.load(response)
+    except urllib.error.HTTPError as exc:
+        detail = exc.read(300).decode("utf-8", "replace")
+        raise FetchError(f"GitHub API returned HTTP {exc.code}: {detail}") from exc
+    except (urllib.error.URLError, TimeoutError) as exc:
+        raise FetchError(f"GitHub API is unreachable: {exc}") from exc
+    return parse_calendar(payload)
 
 
 def summarize(days: list[Day]) -> Summary:
@@ -194,14 +206,18 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--fixture", type=Path, help="saved GraphQL response instead of the API")
     args = parser.parse_args(argv)
 
-    if args.fixture:
-        days = parse_calendar(json.loads(args.fixture.read_text(encoding="utf-8")))
-    else:
-        token = os.environ.get("GITHUB_TOKEN")
-        if not token:
-            print("GITHUB_TOKEN is not set (or pass --fixture)", file=sys.stderr)
-            return 2
-        days = fetch_calendar(args.user, token)
+    token = os.environ.get("GITHUB_TOKEN")
+    if not args.fixture and not token:
+        print("GITHUB_TOKEN is not set (or pass --fixture)", file=sys.stderr)
+        return 2
+    try:
+        if args.fixture:
+            days = parse_calendar(json.loads(args.fixture.read_text(encoding="utf-8")))
+        else:
+            days = fetch_calendar(args.user, token)
+    except (FetchError, ValueError) as exc:
+        print(f"stats: {exc}", file=sys.stderr)
+        return 1
     if not days:
         print("calendar is empty", file=sys.stderr)
         return 1
