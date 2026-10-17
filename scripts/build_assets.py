@@ -22,30 +22,35 @@ from theme import (MONO, REDUCED_MOTION, THEMES, Theme, card_frame, chip, mono_w
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 ICONS = Path(__file__).resolve().parent / "icons"
-SCREENSHOT = ASSETS / "src" / "gig36-map.webp"
-SCREENSHOT_SIZE = (1600, 767)
+# The card shows the site in the reader's theme: gig36.ru home page, light or dark.
+SCREENSHOTS = {name: ASSETS / "src" / f"gig36-home-{name}.webp" for name in ("light", "dark")}
+SCREENSHOT_SIZE = (1600, 750)
 
 WIDTH = 1200
 PAD = 48
 
 GIG36_METRICS = (
-    ("243", "ad surfaces"),
-    ("31", "cities in 8 regions"),
-    ("656", "backend tests"),
-    ("55", "DB migrations"),
+    ("247", "ad surfaces"),
+    ("32", "cities, 7 regions"),
+    ("1175", "backend tests"),
+    ("67", "DB migrations"),
 )
 GIG36_STACK = ("Vue 3", "TypeScript", "FastAPI", "PostgreSQL + PostGIS", "SQLAlchemy",
                "Yandex Maps", "1C exchange", "Docker")
 
 HIGHLIGHTS = (
     ("radius", "Radius search on PostGIS",
-     ("ST_DWithin over geography: real metres,", "results sorted by actual distance.")),
-    ("calendar", "Availability for any period",
-     ("The map shows what is free for the client's", "dates, not just what is free today.")),
-    ("document", "Documents generated server-side",
-     ("Offers in PDF and XLSX, invoices in XLSX,", "DOCX and PDF, file name and format on demand.")),
+     ("ST_DWithin over geography on the server;", "the map filters a drawn circle locally.")),
+    ("lock", "No double selling",
+     ("Surface rows locked before the overlap check,", "order and invoice numbers issued race-free.")),
+    ("bot", "An SPA that bots can read",
+     ("Caddy sends crawlers to the API, which adds", "meta, schema.org and a text snapshot.")),
     ("sync", "Exchange with 1C",
      ("Occupancy and inventory arrive from the", "operator's accounting via the XML exchange plan.")),
+    ("document", "Documents generated server-side",
+     ("Offers in PDF and XLSX, invoices in XLSX,", "DOCX and PDF, with stamp and signature.")),
+    ("gauge", "Animated, still fast",
+     ("A live home page with the M-4 route, while", "mobile PageSpeed went from 43 to 85–96.")),
 )
 
 STACK = (
@@ -69,6 +74,9 @@ LINE_ICONS = {
     "document": '<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>',
     "sync": '<path d="M20 11a8 8 0 0 0-14.5-4.5L4 8"/><path d="M4 4v4h4"/>'
             '<path d="M4 13a8 8 0 0 0 14.5 4.5L20 16"/><path d="M20 20v-4h-4"/>',
+    "lock": '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3M12 15v2"/>',
+    "bot": '<rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9.5 17h5"/>',
+    "gauge": '<path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 18 4-6M7 18h.01M17 18h.01"/>',
     "postgis": '<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/>'
                '<path d="M3.5 9h17M3.5 15h17"/>',
     "external": '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
@@ -211,8 +219,8 @@ def header(t: Theme) -> str:
 
 # --------------------------------------------------------------------------- GIG36 card
 
-def _screenshot_data_uri() -> str:
-    encoded = base64.b64encode(SCREENSHOT.read_bytes()).decode("ascii")
+def _screenshot_data_uri(t: Theme) -> str:
+    encoded = base64.b64encode(SCREENSHOTS[t.name].read_bytes()).decode("ascii")
     return f"data:image/webp;base64,{encoded}"
 
 
@@ -233,7 +241,7 @@ def _browser_frame(t: Theme, x: float, y: float, w: float) -> tuple[str, float]:
         f'<rect x="{url_x}" y="{y + 9}" width="{url_w}" height="22" rx="11" fill="{t.card}" stroke="{t.border}"/>'
         + text(url_x + url_w / 2, y + 25, "gig36.ru", size=13, fill=t.muted, family=MONO, anchor="middle")
         + f'<image x="{x}" y="{y + bar}" width="{w}" height="{shot_h:.1f}" '
-        f'preserveAspectRatio="xMidYMid slice" href="{_screenshot_data_uri()}"/>'
+        f'preserveAspectRatio="xMidYMid slice" href="{_screenshot_data_uri(t)}"/>'
         f"</g>"
         f'<rect x="{x + 0.5}" y="{y + 0.5}" width="{w - 1}" height="{total - 1:.1f}" rx="14" '
         f'fill="none" stroke="{t.border}"/>'
@@ -285,7 +293,7 @@ def gig36_card(t: Theme) -> str:
         + _status_pill(t, w - PAD, 50)
         + text(PAD - 2, 128, "GIG36", size=46, fill=t.text, weight=700, spacing=-1)
         + text(PAD, 160, "Booking platform for an outdoor advertising operator — "
-               "map, online booking, client and staff dashboards.", size=19, fill=t.muted)
+               "from the Moscow region to the Black Sea.", size=19, fill=t.muted)
         + frame
         + "".join(metrics)
         + "".join(chips)
@@ -300,10 +308,12 @@ def highlights(t: Theme) -> str:
     tile_w, tile_h, gap = (w - 2 * PAD - 24) / 2, 132, 24
     top = 96
     tiles = []
+    rows = (len(HIGHLIGHTS) + 1) // 2
     for i, (icon, title, lines) in enumerate(HIGHLIGHTS):
-        x = PAD + (i % 2) * (tile_w + gap)
-        y = top + (i // 2) * (tile_h + gap)
-        accent = t.green if i in (0, 3) else t.purple
+        row, col = divmod(i, 2)
+        x = PAD + col * (tile_w + gap)
+        y = top + row * (tile_h + gap)
+        accent = t.green if (row + col) % 2 == 0 else t.purple
         tiles.append(
             f'<rect x="{x}" y="{y}" width="{tile_w}" height="{tile_h}" rx="14" fill="{t.raised}" stroke="{t.border}"/>'
             f'<rect x="{x + 24}" y="{y + 24}" width="48" height="48" rx="12" fill="{accent}" fill-opacity="0.12"/>'
@@ -312,7 +322,7 @@ def highlights(t: Theme) -> str:
             + "".join(text(x + 92, y + 80 + j * 25, line, size=17, fill=t.muted)
                       for j, line in enumerate(lines))
         )
-    h = int(top + 2 * tile_h + gap + PAD)
+    h = int(top + rows * tile_h + (rows - 1) * gap + PAD)
     body = (
         card_frame(w, h, t)
         + text(PAD, 62, "UNDER THE HOOD", size=14, fill=t.green, family=MONO, weight=600, spacing=3)
